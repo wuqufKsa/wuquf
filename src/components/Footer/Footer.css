@@ -1,0 +1,70 @@
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: calc(var(--size-Medium) * 4) calc(var(--size-large) + 10px);
+  background: var(--bg-main);
+}
+
+
+.project-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: calc(var(--size-Medium) * 4);
+}
+
+.project-footer .card-footer{
+  color: var(--color-main);
+}
+
+.project-footer .card-footer h4{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--size-Medium);
+}
+
+.project-footer .card-footer h4 a {
+  color: var(--color-main);
+ }
+ .project-footer .card-footer a {
+  color: #fff;
+ }
+ .project-footer .card-footer i {
+  font-size: var(--size-Medium);
+  margin: 0px calc(var(--size-small) - 5px);
+  cursor: pointer;
+ }
+
+ footer h3{
+  margin-top: calc(var(--size-Medium) * 4);
+  color: var(--color-main);
+  font-weight: 500;
+}
+
+/* -- Footer --*/
+
+@media (max-width: 850px){
+  footer{
+    padding: var(--size-Medium);
+  }
+
+  .project-footer{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .card-footer{
+    margin: var(--size-Medium) auto;
+  }
+
+  footer h3{
+    text-align: center;
+  }
+}

@@ -1,0 +1,231 @@
+/* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.body{
+  display: flex;
+  flex-direction: row-reverse ;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/*  Form Continer */
+.Form-content {
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 5px 1px rgba(1 1 1/15%);
+}
+
+.Form-continer {
+  width: 100%;
+  height: 100%;
+  padding: calc(var(--size-small) * 5);
+  text-align: right;
+  overflow: auto; 
+  background: var(--color-main);
+}
+
+/* TITLE FORM */
+.title-From {
+  margin: var(--size-Medium) 0px;
+}
+
+.title-From h1 {
+  font-size: calc(var(--size-small) * 5);
+  font-weight: 700;
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-From p {
+  font-size: var(--size-Medium);
+  font-weight: 300;
+  margin: var(--size-small) 0px;
+}
+
+/* -- TITLE FORM -- */
+
+/* INPUT FORM */
+.input {
+  width: 100%;
+  margin: var(--size-small) 0px;
+}
+
+
+
+.input .input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.input .input-group input {
+  width: 100%;
+  padding: var(--size-small);
+  padding-right: calc(var(--size-large) * 2);
+  border-radius: var(--size-small);
+  border: none;
+  border: solid 2px #eee;
+  text-align: right;
+  margin-top: calc(var(--size-small) - 5px);
+  font-size: calc(var(--size-Medium) - 2px);
+  outline: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: calc(var(--size-large) * 2);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input .input-group input:focus {
+  border: solid 4px #eee;
+}
+
+/* -- INPUT FORM -- */
+
+/* Option */
+.input .option{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input .radio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% ;
+  margin: var(--size-small) 0px;
+  padding: var(--size-small) var(--size-Medium);
+  border-radius: var(--size-small);
+  margin: 3px 4px;
+  box-shadow: 0px 0px 1px 1px rgba(1 1 1/15%);
+}
+
+
+.input .radio label{
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.input .radio{
+  border: solid #eee 1px;
+}
+
+/* -- Option -- */
+
+
+/* FOOTER FORM  */
+
+
+#submit {
+  width: 100%;
+  margin-top: calc(var(--size-large) + 10px);
+  padding: var(--size-small) var(--size-Medium);
+  border-radius: var(--size-Medium);
+  border: none;
+  color: var(--color-main);
+  font-size: var(--size-Medium);
+  cursor: pointer;
+  background: linear-gradient(#8779a4, #9e6b8b);
+  transition:  0.5s;
+}
+
+#submit:hover{
+  background: linear-gradient(290deg,#8779a4, #9e6b8b);
+  letter-spacing: 4px;
+}
+
+.Form-continer h4 {
+  margin: calc(var(--size-small) * 5) 0px;
+  text-align: center;
+}
+
+.Form-continer h4 a {
+  text-decoration: none;
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- FOOTER FORM -- */
+
+/* -- Form Continer --*/
+
+/* img login */
+
+.img{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* background: #FDFDFD; */
+}
+
+.img img{
+  width: 80%;
+  height: 100%;
+}
+
+/* -- img login -- */
+
+
+
+/* response */
+
+@media (max-width: 750px){
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-main);
+  }
+  .Form-continer {
+    width: 100%;
+    height: 100%;
+    padding:calc(var(--size-large) + 10px);
+    padding-top: 490px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .Form-continer h1{
+    font-size: var(--size-large);
+  }
+
+  .img{
+    display: none;
+  }
+
+}
+
+/* -- response -- */
+
+

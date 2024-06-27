@@ -1,0 +1,253 @@
+/* Global */
+:root{
+  --color-main: #fff;
+  --bg-main: linear-gradient(#8779a4, #9e6b8b);
+  --size-small:10px;
+  --size-Medium:20px;
+  --size-large:30px;
+}
+
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+/* Section About us */
+
+.AboutUS{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh-56);
+  padding: calc(var(--size-large)*2);
+  background: var(--color-main);
+}
+
+.AboutUS div{
+  width: 50%;
+}
+
+.AboutUS .img-About{
+  margin-top: var(--size-large);
+}
+
+.AboutUS .img-About img{
+  width: 100%;
+  height: 100%;
+}
+
+.AboutUS .info-About {
+  text-align: right;
+  margin: 0px var(--size-Medium);
+}
+
+
+.AboutUS .info-About h1 {
+  font-size: calc(var(--size-large) * 3);
+  margin-bottom: var(--size-large);
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.AboutUS .info-About p{
+  font-size: var(--size-Medium);
+  font-weight: 500;
+}
+
+/*  -- Section About us -- */
+
+
+/*  Section Goals us */
+
+
+.Goals{
+  display: flex;
+  justify-content: center;
+  padding: var(--size-Medium);
+  background: var(--bg-main);
+}
+
+.project-goals{
+  padding: var(--size-large);
+}
+
+.Goals .title-goal{
+  text-align: center;
+  color: var(--color-main);
+  font-size: calc(var(--size-large)*2);
+  margin-bottom: calc(var(--size-large) + 20px);
+}
+
+
+.Goals .priject-card-goals{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.Goals .priject-card-goals .card{
+  width: 300px;
+  background: var(--color-main);
+  margin: calc(var(--size-small) + 5px);
+  padding: var(--size-large);
+  text-align: right;
+  border-radius: var(--size-Medium);
+  transition: 0.5s;
+}
+
+.Goals .priject-card-goals .card:hover{
+  transform: scale(1.2);
+}
+
+/* -- Section Goals us -- */
+
+
+/*  Section virson us  */
+
+.virson{
+  width: 100%;
+  background: var(--color-main);
+  padding: calc(var(--size-large) * 5) 0px;
+}
+
+
+.virson .project-virson{
+  width: 100%;
+}
+
+.virson .project-virson-card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.virson .project-virson-card .card-virson{
+  width: 400px;
+  margin: calc(var(--size-small) + 5px);
+  padding: var(--size-small);
+  font-size: calc(var(--size-small) + 3px);
+  border-radius: var(--size-small);
+  transition: 0.5s;
+}
+
+.virson .project-virson-card .card-virson:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 1px 1px rgba(1 1 1/8%);
+}
+
+.virson .project-virson-card .card-virson h1 {
+  font-weight: 400;
+  margin-bottom: var(--size-small);
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- Section virson us -- */
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: calc(var(--size-Medium) * 4) calc(var(--size-large) + 10px);
+  background: var(--bg-main);
+}
+
+
+.project-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: calc(var(--size-Medium) * 4);
+}
+
+.project-footer .card-footer{
+  color: var(--color-main);
+}
+
+.project-footer .card-footer h4{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: var(--size-Medium);
+}
+
+.project-footer .card-footer h4 a {
+  color: var(--color-main);
+ }
+ .project-footer .card-footer a {
+  color: #fff;
+ }
+ .project-footer .card-footer i {
+  font-size: var(--size-Medium);
+  margin: 0px calc(var(--size-small) - 5px);
+  cursor: pointer;
+ }
+
+ footer h3{
+  margin-top: calc(var(--size-Medium) * 4);
+  color: var(--color-main);
+  font-weight: 500;
+}
+
+/* -- Footer --*/
+
+
+/* response */
+
+@media (max-width: 850px){
+  .AboutUS{
+    flex-direction: column-reverse;
+  }
+  .AboutUS div{
+    width: 100%;
+  }
+
+  .AboutUS .info-About h1{
+    font-size: calc(var(--size-large) + 10px);
+  }
+
+  .Goals .title-goal{
+    font-size: calc(var(--size-large) + 10px);
+  }
+
+  footer{
+    padding: var(--size-Medium);
+  }
+
+  .project-footer{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .card-footer{
+    margin: var(--size-Medium) auto;
+  }
+
+  footer h3{
+    text-align: center;
+  }
+}
+
+
+
+
